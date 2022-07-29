@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<nav id="nav">
+				<div class="menu">
+					<ul>
+						<li><a href="#" id="logo"><h1>V.</h1></li>
+						<li><a href="#desc" class="lItems">About</a></li>
+						<li><a href="#skills-section" class="lItems">Skills</a></li>
+						<li><a href="#connect" class="connect lItems">Let's Connect</a></li>
+						<!-- <li>Gi</li> -->
+
+						<li>
+							<a href="https://github.com/vimleshxrpaswan"
+								><img
+									src="./images/icons8-github.svg"
+									height="35px"
+									width="35px"
+									alt="github icon"
+									srcset=""
+									id="list-icon"
+							/></a>
+						</li>
+
+						<!-- <li>Tw</li> -->
+
+						<li>
+							<a href="https://twitter.com/vimlesh_here"
+								><img
+									src="./images/icons8-twitter.svg"
+									height="35px"
+									width="35px"
+									alt="twitter icon"
+									srcset=""
+									id="list-icon"
+							/></a>
+						</li>
+
+            <li>
+							<a href="https://www.linkedin.com/in/vimlesh-paswan-875b54202/"
+								><img
+									src="./images/iconmonstr-linkedin-3.svg"
+									height="30px"
+									width="30px"
+									alt="linkedin"
+									srcset=""
+									id="list-icon"
+							/></a>
+						</li>
+
+						<li>
+							<a href="#"
+								><img
+									src="./images/icons8-settings (1).svg"
+									height="35px"
+									width="35px"
+									alt="dark mode on off switch"
+									srcset=""
+									id="list-icon"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section id="hero">
+				<div class="hero">
+					<p id="hero1">Vimlesh Paswan<br />Full Stack Web Developer</p>
+					<!-- <p id="hero1">Divyansh<br><span id="sur-name">Dev</span><br></p> -->
+					<!-- <p></p> -->
+				</div>
+			</section>
+			<section id="desc">
+				<div class="description">
+					<p>A 21 yr old Self Taught Full Stack Developer who started to code in the freshman year of college.
+						 Based in India and ready to collab with any project.
+						</p>
+				</div>
+			</section>
+			<section id="skills-section">
+				<div class="skill-bar">
+					<p>Skills</p>
+				</div>
+				<div class="line"></div>
+				<div class="skill-div">
+					<div class="skill-section">
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JavaScript</p>
+						<p>Tailwind</p>
+						<p>Git</p>
+					</div>
+				</div>
+			</section>
+			<section id="connect">                   <!--Lets connect-->
+        <div class="connect-title">
+          <h4>Let's know each other</h4>  
+					<p>Fill out the form below or send me an email at <a id = "contact-email-link" href = "mailto: contact@paswanvimlesh.com">contact@paswanvimlesh.com</a></p>
+					
+					
+					<div class="connect-box">
+						<form action="" class="connect-form">
+							<!-- <img src="./images/icons8-checkmark.svg" alt=""> -->
+							<div class="name">
+								<div class="nameBox">
+									<input type="text" autocomplete="off" placeholder="Full Name" name="yourname" id="name-field" onkeyup="validateName()">
+									<span id="name-error"></span>
+								</div>
+							</div>
+
+							<div class="email">
+								<input type="email" autocomplete="off" placeholder="Email" name="" id="email-field" onkeyup="validateEmail()">
+								<span id="email-error"></span>
+							</div>
+							
+							<div class="message">
+								<textarea name="" autocomplete="off" placeholder="Message" id="text-field" cols="10" rows="1" onkeyup="validateMessage()"></textarea>
+								<span id="message-error"></span>
+							</div>
+						
+							<input type="submit" name="" id="submit-btn">
+							<!-- <span id="submit-error">FIX ERRORS</span> -->
+
+						</form>
+
+					</div>
+
+
+				</div>
+			</section>
+			<footer>
+        <div class="footer-container">
+          <h1 id="foot-logo">V.</h1>
+          <ul>
+            <li>
+							<a href="https://github.com/vimleshxrpaswan"
+								><img
+									src="./images/icons8-github-white.svg"
+									height="35px"
+									width="35px"
+									alt="github icon"
+									srcset=""
+									id="list-icon"
+							/></a>
+						</li>
+
+						<!-- <li>Tw</li> -->
+
+						<li>
+							<a href="https://twitter.com/vimlesh_here"
+								><img
+									src="./images/icons8-twitter-white.svg"
+									height="35px"
+									width="35px"
+									alt="twitter icon"
+									srcset=""
+									id="list-icon"
+							/></a>
+						</li>
+
+						<li>
+              <a href="#"
+              ><img
+									src="./images/icons8-linkedin-square.svg"
+									height="35px"
+									width="35px"
+									alt="dark mode on off switch"
+									srcset=""
+									id="list-icon"
+							/></a>
+						</li>
+          </ul>
+          <div class="email">Get in Touch :<a href = "mailto: contact@paswanvimlesh.com" style="font-family:Neue; color:white; text-decoration: underline;">contact@paswanvimlesh.com</a></div>
+          <div class="copyright">
+            <p>© 2022-23, Vimlesh Paswan , Based in 🇮🇳 </p>
+          </div>
+				</div>
+			</footer>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

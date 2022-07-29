@@ -1,0 +1,294 @@
+@import url("https:/./fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+	font-family: Neue-regular;
+	src: url(./fonts/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Medium.otf)
+		format("opentype");
+}
+@font-face {
+	font-family: Neue;
+	src: url(./fonts/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Medium.otf)
+		format("opentype");
+}
+@font-face {
+	font-family: Neue-light;
+	src: url(./fonts/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Light.otf)
+		format("opentype");
+}
+@font-face {
+	font-family: Neue-bold;
+	src: url(./fonts/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Bold.otf)
+		format("opentype");
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	min-height: 100%;
+}
+/* @media only screen and (max-width: 600px) {
+  
+} */
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+/* @media only screen and (max-width: 600px) {
+} */
+
+nav {
+	width: 100%;
+	font-size: 1.1rem;
+	font-weight: 400;
+	position: fixed;
+	transition: top 0.3s;
+	top: 0;
+	padding: 20px 15px 20px 15px;
+	background: white;
+}
+nav .menu ul {
+	gap: 2.5rem;
+	font-family: Neue;
+	display: flex;
+}
+nav .menu ul li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+}
+#logo {
+	font-family: Neue-bold;
+	font-size: 1.7rem;
+	margin-top: -7px;
+}
+nav a {
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 3px;
+	color: black;
+}
+nav li .lItems:hover {
+	background-color: black;
+	color: white;
+}
+
+nav li:nth-of-type(2) {
+	margin-left: 5rem;
+}
+nav li:nth-of-type(5) {
+	margin-left: auto;
+}
+
+#list-icon:hover {
+	border-bottom: 2px solid black;
+}
+#hero {
+	width:100%;
+	display: flex;
+	background: #c9d6ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#e2e2e2,
+		#c9d6ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#e2e2e2,
+		#c9d6ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.hero {
+	max-width: 65%;
+	font-family: Neue-bold;
+	padding-top: 10.5rem !important;
+	padding-bottom: 10.5rem !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 100px;
+	margin-left: 200px;
+}
+#hero1 {
+	font-size: 4.7rem;
+	font-weight: 500;
+}
+
+#desc {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+}
+.description {
+	width: 55%;
+	font-family: Neue;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.7;
+	word-spacing: 1px;
+	padding-top: 8rem !important;
+	padding-bottom: 8rem !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 200px;
+}
+#skills-section {
+	display: flex;
+	border-bottom: 1px solid #8080808a;
+	padding-bottom: 40px;
+	z-index: -1;
+}
+.skill-bar {
+	font-family: Neue-bold;
+	color: black;
+	width: auto;
+	margin-left: 200px;
+	font-size: 4rem;
+	padding: 50px 0;
+}
+.skill-bar p {
+	position: sticky;
+	top: 108px;
+	z-index: -1;
+}
+.line {
+	border-left: 1px solid #8080808a;
+	margin-left: 70px;
+	margin-top: 60px;
+}
+.skill-div {
+	display: flex;
+	flex-direction: column;
+	font-family: Neue-bold;
+	width: 55%;
+	margin-left: 100px;
+}
+.skill-section {
+	font-family: Neue;
+	font-size: 2rem;
+	margin-top: 50px;
+	line-height: 2;
+}
+
+.connect-title {
+	font-family: Neue-bold;
+	/* color: black; */
+	width: auto;
+	margin-left: 200px;
+	font-size: 6rem;
+	padding: 50px 0;
+}
+.connect-title p {
+	font-family: Neue-regular;
+	font-size: 1.4rem;
+}
+#contact-email-link{
+  font-family:Neue-regular;
+  text-decoration: underline;
+	color: black;
+}
+#contact-email-link:hover {
+	border-radius: 5px;
+	padding: 5px;
+	background-color: black;
+	color:white
+}
+.connect-box {
+	width: 60%;
+	margin-right: auto;
+	/* border: 1px solid; */
+}
+.connect-form span{
+	font-size: 1rem;
+	font-family: Neue-regular;
+	color: red;
+}
+.connect-form {
+	display: flex;
+	flex-direction: column;
+	padding: 80px 0 0 0;
+}
+:is(#name-field, #email-field, #text-field) {
+	font-family: Neue-regular;
+	width: 70%;
+	font-size: 1.2rem;
+	padding: 0 0 6px 0;
+	margin: 20px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #8080808a;
+	/* box-shadow: rgb(38, 57, 77) 0px 10px 10px -15px; */
+}
+:is(#name-field, #email-field, #text-field)::placeholder {
+	font-family: Neue-regular;
+	letter-spacing: 1px;
+	font-size: 0.9rem;
+}
+#text-field {
+	resize: none;
+	overflow: auto;
+}
+#submit-btn {
+	width: 70%;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+	background-color: #101010ff;
+	color: white;
+}
+
+footer {
+	font-family: Neue-bold;
+	width: 100%;
+	height: 40vh;
+	color: white;
+	background-color: #101010ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.4rem;
+}
+.footer-container ul {
+	gap: 1.3rem;
+	font-family: Neue;
+	display: flex;
+}
+#foot-logo {
+	font-size: 3.5rem;
+}
+.footer-container ul li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.footer-container a {
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 3px;
+	color: black;
+}
+.email {
+	font-family: Neue-light;
+	letter-spacing: 1px;
+}
+
+.copyright {
+	font-family: Neue;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+}
